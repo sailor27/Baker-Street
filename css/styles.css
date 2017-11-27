@@ -145,8 +145,6 @@ footer {
     margin-left: 1%;
     margin-right: 1%;
     padding-bottom: 3px;
-    /*margin-right: 2%;*/
-    /*float: left;*/
   }
   .right-img li img{
     width: 100%;
@@ -163,29 +161,57 @@ footer {
     font-size: .8em;
     padding: 25px 0;
   }
-
 }
+
 /*up to 1300px*/
 @media screen and (max-width:1299px){
-
+  .container {
+    position: relative;
+  }
   .image {
+    width: 33%;
+    float: left;
+    display: block;
 
   }
   .nav {
-    float:left;
-    width: 35%;
-    display: block;
-    padding-right:900px;
+    width: 30%;
+    margin: 0;
+    float: left;
+    display:block;
+    position: absolute;
+    top: 35%;
 
-  }
-  .right{
-    margin-left:35%;
-    float:right;
-  }
-  .nav li {
-    display: block;
-  }
 }
+  .nav ul {
+    width: 55%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.nav li {
+  text-align: center;
+
+}
+.right {
+  width: 65%;
+  float: right;
+
+}
+.right-img li{
+  width: 30%;
+  margin-left: 1%;
+  margin-right: 1%;
+  padding-bottom: 3px;
+}
+.right-img li img{
+  width: 100%;
+}
+.right-img li span{
+  padding-top: 2%;
+}
+
 @media screen and (max-width:599px){
   .logo {
     background: none;
