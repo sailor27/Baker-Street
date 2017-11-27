@@ -3,6 +3,7 @@
 font-family: 'Cormorant Garamond', serif;
 font-family: 'PT Serif', serif;*/
 
+
 body {
   margin:0;
   background-color: #e7e7e7;
@@ -54,13 +55,13 @@ li b{
 
 .left{
   width: 25%;
-  float: left;
+  float: right;
   position: relative;
   padding: .75em;
 }
 
 .left ul {
-  max-width: 279px;
+  width:  100%;
 }
 
 .left li {
@@ -91,15 +92,16 @@ li b{
   transform: translate(-50%, -50%)
 }
 .right{
+  position: relative;
   text-align: center;
-  float: left;
+  float: right;
   width: 60%;
   padding-top: 3em;
   margin-right:30px;
 }
 .right-img li{
   display: inline;
-  float: left;
+  float: right;
   text-align: center;
   padding: 5px;
 
@@ -116,4 +118,16 @@ footer {
   background: url("../img/ornament.png") 50% 0 repeat-x;
   clear:both;
   padding-top: 1.25em;
+}
+
+@media screen and (min-width: 1299px){
+  li img{
+    width: 200px;
+    float: left;
+  }
+  .right-img li{
+    padding: 0 20px 0;
+    /*margin-left: auto;
+    margin-right: auto;*/
+  }
 }
