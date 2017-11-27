@@ -2,3 +2,30 @@
 /*font-family: 'Libre Baskerville', serif;
 font-family: 'Cormorant Garamond', serif;
 font-family: 'PT Serif', serif;*/
+
+body {
+  margin:0;
+}
+.top{
+  height: 30px;
+  min-width: 100%;
+  background: url("../img/rag.png") repeat-x ;
+  padding-bottom: 10px;
+  margin:0;
+  }
+
+  .logo {
+    background: url("../img/logo-bg.png") no-repeat;
+    height: 284px;
+    width:279px;
+    position: relative;
+  }
+.logo img {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+
+}
