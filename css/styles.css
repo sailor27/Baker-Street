@@ -168,6 +168,9 @@ footer {
   .container {
     position: relative;
   }
+  .logo {
+    width: auto;
+  }
   .image {
     width: 33%;
     float: left;
@@ -181,8 +184,7 @@ footer {
     display:block;
     position: absolute;
     top: 35%;
-
-}
+  }
   .nav ul {
     width: 55%;
     margin: 0;
@@ -192,11 +194,13 @@ footer {
 
 .nav li {
   text-align: center;
+  min-width: 30%;
 
 }
 .right {
   width: 65%;
   float: right;
+  margin-left: 5px;
 
 }
 .right-img li{
@@ -213,23 +217,43 @@ footer {
 }
 
 @media screen and (max-width:599px){
-  .logo {
-    background: none;
+  .nav{
+    width: 100%;
+    float: left;
+    display: block;
+    position: relative;
   }
   .nav ul{
-    width: 100%;
-  }
-  .nav li{
-    width: 30%;
     display: inline;
+  }
+
+  .nav li{
+    text-align: center;
+    min-width: 30%;
+    display: inline-block;
     font-size: .5em;
     font-family: sans-serif;
   }
-  .logo, .right, .nav{
+  .logo {
+    background: none;
+    margin:auto 100%;
+    width: 100%;
     float: left;
-    clear: both;
+
+    position: relative;
+    display: inline-block;
+    max-height: 130px;
+    padding: 0;
   }
-  .logo-img{
-  position: relative;
+
+  .logo-img {
+    position: relative;
   }
-}
+  .right{
+    width: 100%;
+    float: left;
+    display: block;
+    padding-top: 0px;
+    padding: 0px 15px 0px 15px;
+  }
+  }
